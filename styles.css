@@ -1,0 +1,116 @@
+body {
+  background: #1f1f1f;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  min-height: 100vh; /* make body fill full screen */
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  flex: 1;
+  max-width: 900px; /* don’t let content stretch across giant screens */
+  margin: 0 auto; /* centers the wrapper in the middle */
+  padding: 16px;
+}
+
+.header-container {
+  /* border: 2px solid red; */
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+}
+.tag-line {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #e5e5e5;
+  text-align: center;
+  margin-top: 0.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7), 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.game-container {
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 2em;
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  /* border: 2px solid red; */
+  font-size: 2rem;
+
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  cursor: pointer;
+  flex: 1;
+  width: 300px; /* we’ll talk about removing this later */
+  border: none;
+  background: #2a2a2a;
+  color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.user-score-container {
+  border-right: 1px solid white;
+}
+.user-score-container,
+.computer-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* button animation */
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  background: #333333;
+}
+
+/* Active (when clicked/pressed) */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  background: #1f1f1f;
+}
+
+/* Optional: focus for keyboard users */
+.btn:focus-visible {
+  outline: 2px solid #3882f6;
+  outline-offset: 4px;
+}
