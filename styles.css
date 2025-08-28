@@ -18,14 +18,13 @@ body {
 
 main {
   flex: 1;
-  max-width: 900px; /* don’t let content stretch across giant screens */
   margin: 0 auto; /* centers the wrapper in the middle */
   padding: 16px;
 }
 
 .header-container {
   /* border: 2px solid red; */
-  margin: 2rem;
+  /* margin: 2rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,4 +112,11 @@ footer {
 .btn:focus-visible {
   outline: 2px solid #3882f6;
   outline-offset: 4px;
+}
+
+.computer-choice {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  min-height: 2em; /* reserve space so it doesn't jump */
 }
