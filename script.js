@@ -6,7 +6,7 @@ let computerScore = 0;
 
 //generate a random number between 1 and 3 to get computer choice
 function getComputerChoice() {
-  let choice = Math.random() * (3 - 1) + 1;
+  let choice = Math.floor(Math.random() * 3) + 1;
   return Math.round(choice);
 }
 // get the human choice and change it from text to number - this function returns the user score a number between 1 and 3
