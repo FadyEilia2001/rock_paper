@@ -19,42 +19,49 @@
     </header>
 
     <main>
+      <div id="gameCount" class="startContainer">
+        <button id="startGame">Start Game</button>
+      </div>
       <!-- game section -->
-      <sectin class="game-container">
+      <sectin class="game-container" id="#buttonsContainer">
         <!-- Paper Pick -->
 
-        <button id="gameBtn" class="btn game-button">Rock</button>
+        <button id="rockBtn" class="btn game-button">Rock</button>
 
         <!-- Rock game-button-container -->
 
-        <button id="gameBtn" class="btn game-button">Paper</button>
+        <button id="paperBtn" class="btn game-button">Paper</button>
 
         <!-- scissors game-button-container -->
 
-        <button id="gameBtn" class="btn game-button">Scissors</button>
+        <button id="scissorsBtn" class="btn game-button">Scissors</button>
       </sectin>
+
       <!-- end game section -->
-      <div id="computer-choice" class="computer-choice">Computer choice:...</div>
+      <div id="computer-choice" class="computer-choice">
+        Computer choice:...
+      </div>
 
       <!-- Score Section -->
       <section class="score-container">
         <div class="user-score-container">
           <p class="user-score-title">User Score</p>
-          <p class="user-score">0</p>
+          <p id="userScore" class="user-score"></p>
         </div>
 
         <div class="computer-score-container">
           <p class="computer-score-title">Computer Score</p>
-          <p class="computer-score">0</p>
+          <p id="computerScore" class="computer-score"></p>
         </div>
       </section>
       <!-- Score Section -->
+      <p id="tieCount">Ties = <span id="tieCountSpan"></span></p>
     </main>
 
     <footer>
       <p class="footer-text">First game developed</p>
       <p class="author-text">By Fady Eilia</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

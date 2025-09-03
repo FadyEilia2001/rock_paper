@@ -120,3 +120,46 @@ footer {
   text-align: center;
   min-height: 2em; /* reserve space so it doesn't jump */
 }
+
+.startContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+input {
+  border: 0px;
+  padding: 1rem;
+  width: 30%;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #1f1f1f;
+}
+
+#startGame {
+  border: 0px;
+  padding: 1rem;
+  width: 20%;
+  border-radius: 5px;
+  background-color: #333333;
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.3 ease;
+}
+
+#startGame:hover {
+  background-color: #e5e5e5;
+  color: #1f1f1f;
+  transform: translateY(-3px);
+  transition: all 0.3 ease;
+  box-shadow: 0 8px 15px rgba(60, 233, 103, 0.3);
+}
+
+#tieCount {
+  align-self: center;
+  justify-self: center;
+}
